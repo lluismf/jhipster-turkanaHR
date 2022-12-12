@@ -48,6 +48,20 @@ public class CacheConfiguration {
             createCache(cm, com.turkana.app.domain.User.class.getName());
             createCache(cm, com.turkana.app.domain.Authority.class.getName());
             createCache(cm, com.turkana.app.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.turkana.app.domain.Region.class.getName());
+            createCache(cm, com.turkana.app.domain.Country.class.getName());
+            createCache(cm, com.turkana.app.domain.Location.class.getName());
+            createCache(cm, com.turkana.app.domain.Department.class.getName());
+            createCache(cm, com.turkana.app.domain.Department.class.getName() + ".employees");
+            createCache(cm, com.turkana.app.domain.Task.class.getName());
+            createCache(cm, com.turkana.app.domain.Task.class.getName() + ".jobs");
+            createCache(cm, com.turkana.app.domain.Employee.class.getName());
+            createCache(cm, com.turkana.app.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, com.turkana.app.domain.Employee.class.getName() + ".contacts");
+            createCache(cm, com.turkana.app.domain.Contact.class.getName());
+            createCache(cm, com.turkana.app.domain.Job.class.getName());
+            createCache(cm, com.turkana.app.domain.Job.class.getName() + ".tasks");
+            createCache(cm, com.turkana.app.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
